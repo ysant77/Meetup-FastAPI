@@ -148,6 +148,7 @@ To run the tests, navigate to the project root directory and execute:
 
 ```bash
 pytest --cov=app --cov-report=html
+```
 
 ---
 
