@@ -78,7 +78,7 @@ def create_event(
     """
     if current_user.role not in ["admin", "event_organizer"]:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
-    return service.admin_create_event(db=db, event_data=event, organizer_id=current_user.id)
+    return service.create_event(db=db, event_data=event, organizer_id=current_user.id)
 
 @app.post("/events/{event_id}/enroll/")
 def enroll_user_in_event(
