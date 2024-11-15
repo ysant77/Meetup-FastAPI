@@ -145,6 +145,8 @@ To run the tests, navigate to the project root directory and execute:
 ```bash
 pytest --cov=app --cov-report=html
 
+---
+
 ## Test Coverage
 
 Our test suite ensures high code coverage across key components of the application. It includes test cases for:
