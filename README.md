@@ -1,6 +1,6 @@
 # Meetup-FastAPI
 
-A FastAPI-based web application designed to manage meetups and events. This project provides functionality for user registration, authentication, event creation, and enrollment, along with strict role-based access control for added security. 
+A FastAPI-based web application designed to manage meetups and events. This project provides functionality for user registration, authentication, event creation, and enrollment, along with strict role-based access control for added security.
 
 ---
 
@@ -12,17 +12,20 @@ A FastAPI-based web application designed to manage meetups and events. This proj
 - [API Endpoints](#api-endpoints)
 - [Unit Testing](#unit-testing)
 - [Postman Collection](#postman-collection)
+- [License](#license)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
 ## Features
 
 - **User Authentication**: Secure, hashed password storage with JWT-based authentication.
-- **Role-Based Access Control**: 
+- **Role-Based Access Control**:
   - `Admin`: Full access, including user management, event creation, updates, and deletions.
   - `Event Organizer`: Can create, update, and manage events they organize.
   - `User`: Can view and enroll in events.
-- **Event Management**: 
+- **Event Management**:
   - Create events with attributes such as name, date, venue, speaker, and capacity.
   - View and update event details (limited to event organizers and admins).
   - Enroll in events, respecting maximum capacity and schedule conflicts.
@@ -35,6 +38,7 @@ A FastAPI-based web application designed to manage meetups and events. This proj
 
 This project is organized into separate files and modules for scalability and ease of maintenance:
 
+```plaintext
 Meetup-FastAPI/
 ├── app/
 │   ├── __init__.py             # Initializes the app module
@@ -53,10 +57,10 @@ Meetup-FastAPI/
 │   ├── test_enrollments.py     # Unit tests for user enrollment in events
 │   ├── test_events.py          # Unit tests for event management
 │   ├── test_users.py           # Unit tests for user management and registration
-├──  htmlcov                    # HTML Coverage for unit tests
+├── htmlcov/                    # HTML Coverage for unit tests
 ├── .coverage                   # Hidden folder for test coverage generated
 ├── pytest.ini                  # Pytest configuration file for setting test options and plugins
-├── requirements.txt            # requirements file
+├── requirements.txt            # List of dependencies for the project
 ├── README.md                   # Documentation for the project
 
 
