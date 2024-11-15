@@ -166,7 +166,7 @@ Our test suite ensures high code coverage across key components of the applicati
 
 To simplify API testing, a Postman collection is available with pre-configured requests. Download it from the link below and import it into Postman.
 
-[Download Postman Collection](https://dummy-link.com/postman-collection)
+[Download Postman Collection](https://drive.google.com/file/d/1rY02BDA2c7wiTeL0EfypfOwqtIC601RL/view?usp=sharing)
 
 This collection includes requests for all major endpoints with detailed descriptions, headers, and sample payloads. Use this to quickly test and experiment with the API.
 
